@@ -5,28 +5,29 @@
  *
  * Return: no return
  */
-void jack_bauer(void){
+void jack_bauer(void)
+{
+	int a, b, c, d;
 
-    int min, min1, hr1, hr;
-
-    for (hr1 = 0; hr1 < 3; hr1++)
-    {
-        for (hr = 0; hr < 4; hr++)
-        {
-            for (min1 = 0; min1 < 6; min1++)
-            {
-                for (min = 0; min < 10; min++)
-                {
-                    _putchar(48 + hr1);
-                    _putchar(48 + hr);
-                    _putchar(58);
-                    _putchar(48 + min1);
-                    _putchar(48 + min);
-                    _putchar('\n');
-                }
-            }
-        }
-        
-    }
-    
+	for (a = 48; a <= 50; a++)
+	{
+		for (b = 48; b <= 57; b++)
+		{
+			for (c = 48; c <= 53; c++)
+			{
+				for (d = 48; d <= 57; d++)
+				{
+					if (a >= 50 && b >= 52)
+						break;
+					_putchar(a);
+					_putchar(b);
+					_putchar(58);
+					_putchar(c);
+					_putchar(d);
+					_putchar('\n');
+				}
+			}
+		}
+	}
 }
+
