@@ -5,6 +5,7 @@
  * @c: input character.
  * Return: 1 if is an uppercase character,0in other case.
  */
+
 int _isupper(int c)
 {
 	if ((c > 64) &&( c < 91))
